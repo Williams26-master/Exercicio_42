@@ -11,7 +11,7 @@ function calc() {
         console.log("numero invalido")
     } else {
         for (let i = 20; i <= n1; i++) {          
-           div.innerHTML += `${i}<br>`
+           div.innerHTML = `${i}<br>`
            console.log(i)
         }
     }
