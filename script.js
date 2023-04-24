@@ -2,12 +2,14 @@ let btn = document.getElementById('btn')
 let div = document.getElementById('content')
 
 function imprimirNumeros() {
+  
   let numero = parseInt(document.getElementById('numero').value)
-  let cores = ['success', 'warning', 'info', 'danger', 'primary', 'secondary'] // cores adicionais
-  let corIndex = 0 // índice da cor atual
+  let cores = ['success', 'warning', 'info', 'danger', 'primary', 'secondary'] 
+  let corIndex = 0 
+  
   if (numero < 10) {
     for (let i = 20; i >= numero; i--) {
-      let corAtual = cores[corIndex % cores.length] // seleciona a próxima cor
+      let corAtual = cores[corIndex % cores.length] 
       div.innerHTML += `<p class="alert alert-${corAtual}">${i}</p>`
       corIndex++
     }
